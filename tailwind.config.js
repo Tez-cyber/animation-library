@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      
+      backgroundImage: {
+        "jumbo1": "url('./assets/img-2.jpg')"
+      }
     },
   },
   plugins: [],
