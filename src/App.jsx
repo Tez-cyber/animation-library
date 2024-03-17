@@ -5,7 +5,7 @@ import Images from './Images'
 import { gsap, Power3  } from "gsap"
 
 function App() {
-  let tl =new gsap.timeline();
+  let tl = new gsap.timeline();
   let ease = Power3.easeOut()
 
   return (
@@ -13,8 +13,8 @@ function App() {
       <div className="hero">
         <Header timeline={tl} ease={ease}  />
         <div className="flex items-center justify-between w-full h-screen flex-row">
-          <Content />
-          <Images />
+          <Content timeline={tl} />
+          <Images timeline={tl} ease={ease}  />
         </div>
       </div>
     </>
